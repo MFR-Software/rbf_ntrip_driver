@@ -1,15 +1,15 @@
 /**:
   ros__parameters:
     ntrip:
-      host: "212.156.70.42"
-      user_name: "-----------"
-      password: "---------"
-      mount_point: "VRSRTCM31"
+      host: "3.143.243.81"
+      user_name: "denemeMelih12@gmail.com"
+      password: ""
+      mount_point: "Droneqube002"
       port: 2101
-      use_nav_sat_fix_init: false
-      nav_sat_fix_topic_name: "/fix"
-      init_ntrip_location_lat: 0.0000000000
-      init_ntrip_location_lon: 0.0000000000
+      use_nav_sat_fix_init: true
+      nav_sat_fix_topic_name: "/robins/raw/nav_sat_fix"
+      init_ntrip_location_lat: 39.9178
+      init_ntrip_location_lon: 32.7726
 
     serial_port:
       publish_port_rtcm: false
@@ -17,6 +17,6 @@
       baud_rate: 460800
 
     rtcm_publisher:
-      publish_rtcm: false
+      publish_rtcm: true
       rtcm_topic: "/rtcm"
       rtcm_frame_id: "rtcm"
